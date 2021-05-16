@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/linear_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loai thu"
+            android:id="@+id/tv_loai_thu"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"/>
+        <ImageView
+            android:id="@+id/img_delete_khoan_thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:paddingHorizontal="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_edit_khoan_thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/img_delete_khoan_thu"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:paddingRight="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_title"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_so_tien_thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số tiền thu: "
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_loai_thu_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nội dung: "
+            android:padding="5dp"
+            android:layout_below="@id/tv_so_tien_thu"
+            />
+        <TextView
+            android:id="@+id/tv_value_tien_thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 000 vnđ"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/tv_so_tien_thu"
+            />
+        <TextView
+            android:id="@+id/tv_value_loai_thu_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiền Youtube: "
+            android:padding="5dp"
+            android:layout_alignLeft="@+id/tv_value_tien_thu"
+            android:layout_below="@+id/tv_value_tien_thu"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

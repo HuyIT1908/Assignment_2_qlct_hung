@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title_khoan_chi_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center_horizontal"
+        android:text="Khoản Thu"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sua_ten_khoan_chi_update"
+        style="@style/style_tv_dialog_khoan_thu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:text="Nội dung thu:" />
+
+    <EditText
+        android:id="@+id/ed_nhap_title_khoan_chi_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:hint="Nhập nội dung" />
+
+    <TextView
+        style="@style/style_tv_dialog_khoan_thu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:text="Số tiền thu: " />
+
+    <EditText
+        android:id="@+id/ed_nhap_so_tien_khoan_chi_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:hint="Nhập số tiền"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_so_tien_thu_trong_khoan_chi_update"
+        style="@style/style_tv_dialog_khoan_thu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:text="Chọn loại thu: " />
+
+    <Spinner
+        android:id="@+id/spiner_so_tien_thu_trong_khoan_chi_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_huy_khoan_chi_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Hủy" />
+
+        <Button
+            android:id="@+id/btn_luu_khoan_chi_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Cập nhật" />
+    </LinearLayout>
+</LinearLayout>
